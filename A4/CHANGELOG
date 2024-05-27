@@ -1,0 +1,43 @@
+Jan 26th - Created directory and land.c file
+Jan 29th - Made init and road functions. 
+    This initializes the map and connects the roads randomly from top to bottem and left to right.
+    
+Jan 29th Afternoon - created a function to randomly place tall grass regions
+    I then used this function to replicate it for the rest of the uniqe areas, this includes boulders, 
+    trees, water, etc.
+
+Jan 30th - Finalizing Code, looking into different implementation of areas using a 
+    growth system. created zoneloco struct and growth function
+
+Feb 1st - Added new line charecters to the end of each row in my double charecter array used for holding   
+    the data for the map. Added some more instances of water and trees around the map.
+
+Feb 6th - Begun working on assignment. Created copy of initial assignment, created individual map struct including 
+    location of each gate. Made global array of pointers to individual maps. Worked with this for a while with many issues.
+
+Feb 7th - continued with assignment, ran into issue when initializing individual maps. Decided to change to instructors version of 1.01. 
+    Created global array, edited many function parameters to either include the global array, or the location of current map.
+
+Feb 8th - initialized global array to null, ensured gate locations when moving through maps. Created probability for centers and marts when moving further
+    from the center. Made it so the player cannot move out of the array boundaries. 
+
+Feb 11th - Began working on assignment 1.03, Created copy of existing dijkstas algo to use for pathing. Began researching the algorithm to see how 
+    exactly to implement this for the player.
+
+Feb 12th - Changed the way the the character is placed on the map, this included some small changes to the map struct to include player cords in 
+    the way of a pair. This makes it easier to call for the position in the dijkstas implementation.
+
+Feb 13th - Began to alter the algorithm to work for the player pathing, Was very confused for a while and started researching how to exactly 
+    implement the cost changes.
+
+Feb 18th - Created an array for the hikers costs based on different terrains. Mostly finished the begining of the algorithm where we initialize 
+    all cost to int max and only input valid terrain types for the hiker.
+
+Feb 19th - Made all the checks for the 8 surrounding tiles. Troubleshooted for hours and segfaulted 100+ times. Quit working because I was mad.
+
+Feb 20th - Woke up and somehow the segfaults stopped with a small tweak. Trouble shot some small cost issues where I was subtracting in the wrong
+    spot. Now the method works 100% for the hiker.
+
+    Later same day, Made new method for the rival. Created a rival array for costs depending on terrain. Implemented the method in the same way 
+    I made the hiker implementation. Updated README
+

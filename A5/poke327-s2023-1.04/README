@@ -1,0 +1,14 @@
+Comile with make
+run with ./poke327
+
+All character movement works well with npcs getting an updated pathfind on every character move
+
+Note: I spent a long time trying to get a menu ui popup to work for the centers, marts, menu, and fights, but I really couldnt figure it out. Instead information for these things are displayed on the bottem three lines.
+
+There are probably 6 or 7 functions maybe more that are unused helper funcitons for window and panel creation that I ended up not using because I couldnt get anything to override the game screen although I tried for a long time.
+
+NPC fight screens are not implemented as I tried and failed to do so. I need to find a better way of indexing whether the pc is moving onto a npc because I tried using their symbols but it didn't work and the core started dumping randomly so i just decided to not bother.
+
+I know I procrastinated I'm sorry I'll do better
+
+

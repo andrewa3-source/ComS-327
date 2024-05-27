@@ -1,0 +1,21 @@
+Andrew Ahrenkiel 
+andrewa3@iastate.edu
+
+Code initializes a double char array with % on the border and . for every other location other than newlines at
+    the end of each row. 
+
+
+run with ./land
+
+Each zone: tall grass, mountains/boulders, water, trees, has a method that randomly places a region.
+Roads and Marts are placed after the constuction of the map
+
+zone location struct is UNUSED in the final implementation 
+growth function is UNUSED in the final implementation
+
+I played around with the thought of using a stuct and assigning random locations for different bodies
+    I would then grow each zone out from its randomly selected location until it reaches another zone.
+    I ran out of time and did not finish this implementation, i might explore it more in the future.
+
+For anymore questions please contact me at the email or discord
+Kats#2044 on discord

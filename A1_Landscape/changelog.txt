@@ -1,0 +1,13 @@
+Jan 26th - Created directory and land.c file
+Jan 29th - Made init and road functions. 
+    This initializes the map and connects the roads randomly from top to bottem and left to right.
+    
+Jan 29th Afternoon - created a function to randomly place tall grass regions
+    I then used this function to replicate it for the rest of the uniqe areas, this includes boulders, 
+    trees, water, etc.
+
+Jan 30th - Finalizing Code, looking into different implementation of areas using a 
+    growth system. created zoneloco struct and growth function
+
+Feb 1st - Added new line charecters to the end of each row in my double charecter array used for holding   
+    the data for the map. Added some more instances of water and trees around the map.

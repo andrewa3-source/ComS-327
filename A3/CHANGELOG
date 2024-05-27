@@ -1,0 +1,22 @@
+Jan 26th - Created directory and land.c file
+Jan 29th - Made init and road functions. 
+    This initializes the map and connects the roads randomly from top to bottem and left to right.
+    
+Jan 29th Afternoon - created a function to randomly place tall grass regions
+    I then used this function to replicate it for the rest of the uniqe areas, this includes boulders, 
+    trees, water, etc.
+
+Jan 30th - Finalizing Code, looking into different implementation of areas using a 
+    growth system. created zoneloco struct and growth function
+
+Feb 1st - Added new line charecters to the end of each row in my double charecter array used for holding   
+    the data for the map. Added some more instances of water and trees around the map.
+
+Feb 6th - Begun working on assignment. Created copy of initial assignment, created individual map struct including 
+    location of each gate. Made global array of pointers to individual maps. Worked with this for a while with many issues.
+
+Feb 7th - continued with assignment, ran into issue when initializing individual maps. Decided to change to instructors version of 1.01. 
+    Created global array, edited many function parameters to either include the global array, or the location of current map.
+
+Feb 8th - initialized global array to null, ensured gate locations when moving through maps. Created probability for centers and marts when moving further
+    from the center. Made it so the player cannot move out of the array boundaries. 

@@ -1,0 +1,9 @@
+fly to bounds within (-200 -200) to (198 198)
+
+n, s, e, w   controls map location
+
+maps at the edge of the map may have a road leading to the edge, but there will be no gate on the edge.
+
+compile with make
+
+run with ./poke327

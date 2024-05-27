@@ -1,0 +1,51 @@
+Jan 26th - Created directory and land.c file
+Jan 29th - Made init and road functions. 
+    This initializes the map and connects the roads randomly from top to bottem and left to right.
+    
+Jan 29th Afternoon - created a function to randomly place tall grass regions
+    I then used this function to replicate it for the rest of the uniqe areas, this includes boulders, 
+    trees, water, etc.
+
+Jan 30th - Finalizing Code, looking into different implementation of areas using a 
+    growth system. created zoneloco struct and growth function
+
+Feb 1st - Added new line charecters to the end of each row in my double charecter array used for holding   
+    the data for the map. Added some more instances of water and trees around the map.
+
+Feb 6th - Begun working on assignment. Created copy of initial assignment, created individual map struct including 
+    location of each gate. Made global array of pointers to individual maps. Worked with this for a while with many issues.
+
+Feb 7th - continued with assignment, ran into issue when initializing individual maps. Decided to change to instructors version of 1.01. 
+    Created global array, edited many function parameters to either include the global array, or the location of current map.
+
+Feb 8th - initialized global array to null, ensured gate locations when moving through maps. Created probability for centers and marts when moving further
+    from the center. Made it so the player cannot move out of the array boundaries. 
+
+Feb 11th - Began working on assignment 1.03, Created copy of existing dijkstas algo to use for pathing. Began researching the algorithm to see how 
+    exactly to implement this for the player.
+
+Feb 12th - Changed the way the the character is placed on the map, this included some small changes to the map struct to include player cords in 
+    the way of a pair. This makes it easier to call for the position in the dijkstas implementation.
+
+Feb 13th - Began to alter the algorithm to work for the player pathing, Was very confused for a while and started researching how to exactly 
+    implement the cost changes.
+
+Feb 18th - Created an array for the hikers costs based on different terrains. Mostly finished the begining of the algorithm where we initialize 
+    all cost to int max and only input valid terrain types for the hiker.
+
+Feb 19th - Made all the checks for the 8 surrounding tiles. Troubleshooted for hours and segfaulted 100+ times. Quit working because I was mad.
+
+Feb 20th - Woke up and somehow the segfaults stopped with a small tweak. Trouble shot some small cost issues where I was subtracting in the wrong
+    spot. Now the method works 100% for the hiker.
+
+    Later same day, Made new method for the rival. Created a rival array for costs depending on terrain. Implemented the method in the same way 
+    I made the hiker implementation. Updated README
+
+March 19th - Started Working on assignment(yeah I know I procrstinated and it will probably show in my grade I'm sorry I will do better), Imported ncurses and set the print_map function to use the ncurses screen. This worked for first game screen but didn't update yet.
+
+March 20th - added new information to the game loop so the space bar would cycle the npcs and q would exit the game, started working on character movement
+
+March 21st - had a lot of issues with character movement but finally figured it out. Implemented the pathfind everytime the character moves so the main game function is done.
+
+March 22nd - Ensured character movement was okay. Added the input to the centers and marts with respective exits. I messed with trying to get a window popup to work for like 4 hours but couldnt get any method to work. I think this is because my actually game is just on the screen and not in its own window but i'm not sure. Instead i just had menu information be displayed on the bottem three lines of the terminal. Once that worked I started working on the npc menu, again just in the bottem of the screen because I couldn't figure out the pop up. Debugged this for a while and finally got it working for the most part. I tryed implementing a popup for npc battles but failed and I really don't know the best way to do it so I'm cutting my losses.
+

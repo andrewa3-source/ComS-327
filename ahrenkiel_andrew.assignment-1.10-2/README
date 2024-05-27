@@ -1,0 +1,14 @@
+For this assignment I added pokemon Gyms!
+
+Gyms are currently generated with the same odds as a center or mart for simplicity and being able to access easily for demo purposes
+Idealy it would have much lower chance or fixed location in the world.
+
+In each gym there is a new unique npc type that is a gym trainer
+Gym trainers will have a full team of high level pokemon as they are intended to be a boss battle for game progression
+
+In the gym I changed the controls to use wasd instead of the usual numbers or whatever as i like that more
+
+You can challenge the gym trainer by walking up to him
+You will have to leave and re enter to challenge him again, which makes sense as you will need to heal your pokemon anyways.
+
+to exit just press q or walk out the door.
